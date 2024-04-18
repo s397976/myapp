@@ -24,5 +24,6 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path("register/",  views.register)
+    path("register/",  views.register),
+    path("course/",  views.course)
 ]
