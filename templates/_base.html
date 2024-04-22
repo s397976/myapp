@@ -18,11 +18,62 @@
  
 </head>
  
+
 <body class="bg-black-50">
-    <div class="container mx-auto mt-4">
+  
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div >
+            <img src="{% static 'logo.png' %}" >
+            </div>
+            <div>courses</div>
+            <div>Quiz</div>
+            <div>Green investor</div>
+            <div>About us</div>
+              </div>
+            </div>
+          </nav> 
+      
+    <div class="container mx-auto mt-4 items-center ">
         {% block content %}
         {% endblock content %}
     </div>
+    <nav class="bg-white">
+       
+        <div class="relative flex  items-center justify-between">
+          <img src="{% static 'logo.png' %}" >
+        
+        <div class='flex flex-row '>
+          <div class='flex-col ' >
+           
+            <div ><h1 class="text-orange-700 font-black">Explore</h1>
+              <div>Home</div>
+              <div>courses</div>
+              <div>About Us</div>
+           </div>
+          <div class=' flex flex-col'>
+            <h1 class="text-orange-700 font-black">contact</h1>
+            <div>Facebook</div>
+            <div>+84 912345678</div>
+            <div>X</div>
+                  
+          </div>      
+        </div>
+          
+            <form>
+              <h1>
+              Keep In Touch
+            </h1>
+        
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="email">
+          </form>
+          
+            </div>
+          </div>
+        
+        
+        </nav>
 </body>
  
 </html>
