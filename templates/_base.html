@@ -19,7 +19,7 @@
 </head>
  
 
-<body class="bg-black-50">
+<body >
   
     <nav class="bg-white">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -34,8 +34,8 @@
               </div>
             </div>
           </nav> 
-      
-    <div class="container mx-auto mt-4 items-center  ">
+          
+    <div class=" mx-auto mt-4 items-center flex  flex-row  justify-around " style="background-image: url('{% static 'background.png' %}'); height: 400px">
         {% block content %}
         {% endblock content %}
     </div>
