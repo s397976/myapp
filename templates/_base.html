@@ -19,7 +19,7 @@
 </head>
  
 
-<body >
+<body class="container" >
   
     <nav class="bg-white">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,13 +35,13 @@
             </div>
           </nav> 
           
-    <div class=" mx-auto mt-4 items-center flex  flex-row  justify-around " style="background-image: url('{% static 'background.png' %}'); height: 400%">
+    <div class="   items-center   flex justify-end" style="background-image: url('{% static 'background.png' %}');">
         {% block content %}
         {% endblock content %}
     </div>
     <nav class="bg-white">
        
-        <div class="relative flex  items-center justify-between">
+        <div class="relative flex-1  items-center justify-between">
           <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
         
         <div class='flex flex-row '>
