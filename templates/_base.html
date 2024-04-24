@@ -25,9 +25,9 @@
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div >
-            <img src="{% static 'logo.png' %}" >
+            <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
             </div>
-            <div>courses</div>
+            <div><a href="{% url 'course' %}">courses</a></div>
             <div>Quiz</div>
             <div>Green investor</div>
             <div>About us</div>
@@ -35,21 +35,21 @@
             </div>
           </nav> 
           
-    <div class=" mx-auto mt-4 items-center flex  flex-row  justify-around " style="background-image: url('{% static 'background.png' %}'); height: 400px">
+    <div class=" mx-auto mt-4 items-center flex  flex-row  justify-around " style="background-image: url('{% static 'background.png' %}'); height: 400%">
         {% block content %}
         {% endblock content %}
     </div>
     <nav class="bg-white">
        
         <div class="relative flex  items-center justify-between">
-          <img src="{% static 'logo.png' %}" >
+          <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
         
         <div class='flex flex-row '>
           <div class='flex-col ' >
            
             <div ><h1 class="text-orange-700 font-black">Explore</h1>
               <div>Home</div>
-              <div>courses</div>
+              <div><a href="{% url 'course' %}">courses</a></div>
               <div>About Us</div>
            </div>
           <div class=' flex flex-col'>
