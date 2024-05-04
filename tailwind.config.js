@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      './templates/**/*.html'
+      './templates/**/*.html',
+      './containers/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {},
@@ -9,4 +10,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],
+  
 }

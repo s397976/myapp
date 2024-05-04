@@ -6,3 +6,5 @@ def register(request):
     return render(request,'register.html')
 def course(request):
     return render(request,'course.html')
+def homepage(request):
+    return render(request,'homepage.html')

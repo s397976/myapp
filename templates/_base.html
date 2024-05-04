@@ -19,7 +19,7 @@
 </head>
  
 
-<body class="container" >
+<body >
   
     <nav class="bg-white">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,11 +35,11 @@
             </div>
           </nav> 
           
-    <div class="   items-center   flex justify-end" style="background-image: url('{% static 'background.png' %}');">
+    <!--div class="   items-center   flex justify-end" style="background-image: url('{% static 'background.png' %}');"-->
         {% block content %}
         {% endblock content %}
-    </div>
-    <nav class="bg-white">
+    <!--/div-->
+    <!--nav class="bg-white">
        
         <div class="relative flex-1  items-center justify-between">
           <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
@@ -73,7 +73,26 @@
           </div>
         
         
-        </nav>
+        </nav-->
+
+        
+
+
+        <footer class=""> 
+          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+              <div >
+              <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
+              </div>
+              <div><a href="{% url 'course' %}">courses</a></div>
+              <div>Quiz</div>
+              <div>Green investor</div>
+              <div>About us</div>
+                </div>
+              </div>
+      </footer> 
+       
+
 </body>
  
 </html>
