@@ -31,6 +31,8 @@
             <div>Quiz</div>
             <div>Green investor</div>
             <div>About us</div>
+            <div> </div>
+           <a href="{% url 'homepage' %}" > <img src="{% static 'profile.png' %}" ></a>
               </div>
             </div>
           </nav> 
@@ -42,20 +44,20 @@
         
 
 
-        <footer class=" sticky bottom-4w text-center  flex h-16 items-center justify-between mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"> 
+        <footer class=" sticky bottom-4w text-center  flex h-fit items-center justify-between mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"> 
           
            
               <div >
               <a href="{% url 'index' %}"><img src="{% static 'logo.png' %}" ></a>
               </div>
               
-              <div>
+              <div class='h-fit'>
                 <h1>Explore</h1>
                 <h2>home</h2>
                 <h2>courses</h2>
                 <h2>About Us</h2>
-              </div>
-              <div>
+              </div >
+              <div class='h-fit'>
                 <h1>Contact Us</h1>
                 <h2>+84 912345678</h2>
                 <h2>Facebook</h2>
@@ -66,7 +68,7 @@
               
       </footer> 
        
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
  
 </html>

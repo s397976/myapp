@@ -5,7 +5,8 @@ module.exports = {
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
       './templates/**/*.html',
-      './containers/**/*.{js,ts,jsx,tsx,mdx}'
+      './containers/**/*.{js,ts,jsx,tsx,mdx}',
+      './node_modules/flowbite/**/*.js'
   ],
   theme: {
     extend: {},
@@ -13,6 +14,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
   
 }
