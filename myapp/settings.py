@@ -138,5 +138,5 @@ STATICFILES_FINDERS = (
                        )
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    
+    BASE_DIR.parent / "node_modules" 
 ]
