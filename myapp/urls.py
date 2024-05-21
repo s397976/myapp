@@ -17,6 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
+from django.shortcuts import render
 
 from .views import index
 from myapp import views
@@ -27,5 +28,6 @@ urlpatterns = [
     path("register/",  views.register, name='register'),
     path("course/",  views.course, name='course'),
     path("homepage/",  views.homepage, name='homepage'),
+    path("about/", lambda request: render(request, 'about_us.html'), name='about_us'),
     path("__reload__/", include("django_browser_reload.urls"))
 ]
